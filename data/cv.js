@@ -14,26 +14,27 @@
 
    Publications 섹션은 publications.js에서 자동으로 불러옵니다.
 
-   ※ period가 빈 항목이 남아 있습니다. 기간을 채워 주세요.
-   ※ 학부 항목은 정보가 없어 비워 두었습니다. 아래 education 배열에
-      { period, title, org } 형태로 하나 추가하면 됩니다.
 ------------------------------------------------------------------ */
 
 const CV = {
   education: [
     {
-      period: "",                                   // TODO: 예) "2019 — 2026"
+      period: "Sep 2020 — Aug 2026",
       title: "Ph.D. in Brain and Cognitive Engineering",
       org: "Korea Advanced Institute of Science and Technology (KAIST)",
       detail: "Integrated M.S.–Ph.D. program, advised by Prof. Seongjun Park"
+    },
+    {
+      period: "Mar 2015 — Aug 2020",
+      title: "B.S. in Electrical Engineering and Bio and Brain Engineering",
+      org: "Korea Advanced Institute of Science and Technology (KAIST)",
+      detail: "Double major"
     }
-    // TODO: 학부 항목 추가
-    // { period: "", title: "B.S. in ___", org: "___" }
   ],
 
   experience: [
     {
-      period: "",                                   // TODO: 예) "2026 — present"
+      period: "Sep 2026 — present",
       title: "Postdoctoral Researcher",
       org: "Medical Research Center, Seoul National University",
       detail: "Non-genetic neuromodulation and memory engram control"
