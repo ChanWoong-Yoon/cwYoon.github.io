@@ -37,6 +37,7 @@ const PROFILE = {
 
   // url이 빈 문자열인 항목은 화면에 표시되지 않습니다. 나중에 채우면 자동으로 나타납니다.
   links: [
+    { label: "Lab",            url: "https://www.bnilab.com" },
     { label: "ORCID",          url: "https://orcid.org/0009-0008-1566-4711" },
     { label: "Google Scholar", url: "" },
     { label: "GitHub",         url: "" },
