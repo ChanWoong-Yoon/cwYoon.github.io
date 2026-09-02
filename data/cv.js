@@ -14,66 +14,76 @@
 
    Publications 섹션은 publications.js에서 자동으로 불러옵니다.
 
-   ※ 아래는 예시입니다. 실제 이력으로 교체하세요.
+   ※ period가 빈 항목이 남아 있습니다. 기간을 채워 주세요.
+   ※ 학부 항목은 정보가 없어 비워 두었습니다. 아래 education 배열에
+      { period, title, org } 형태로 하나 추가하면 됩니다.
 ------------------------------------------------------------------ */
 
 const CV = {
   education: [
     {
-      period: "2023 — present",
-      title: "Ph.D. in Biomedical Engineering",
-      org: "University Name",
-      detail: "Neural Interface Laboratory, advised by Prof. Hyunjoo Kim",
-      bullets: [
-        "Dissertation: chronic stability of soft, high-density cortical interfaces"
-      ]
-    },
-    {
-      period: "2021 — 2023",
-      title: "M.S. in Biomedical Engineering",
-      org: "University Name",
-      detail: "Thesis on strain-tolerant interconnects for electrocorticography arrays"
-    },
-    {
-      period: "2017 — 2021",
-      title: "B.S. in Electrical Engineering",
-      org: "University Name"
+      period: "",                                   // TODO: 예) "2019 — 2026"
+      title: "Ph.D. in Brain and Cognitive Engineering",
+      org: "Korea Advanced Institute of Science and Technology (KAIST)",
+      detail: "Integrated M.S.–Ph.D. program, advised by Prof. Seongjun Park"
     }
+    // TODO: 학부 항목 추가
+    // { period: "", title: "B.S. in ___", org: "___" }
   ],
 
   experience: [
     {
-      period: "2024 (summer)",
-      title: "Research Intern",
-      org: "Neurotechnology Group, Company or Institute",
-      bullets: [
-        "Built an automated saline-soak test rig for accelerated implant lifetime estimation",
-        "Characterized encapsulation failure across four polymer stacks"
-      ]
-    },
-    {
-      period: "2022 — 2023",
-      title: "Graduate Research Assistant",
-      org: "Neural Interface Laboratory, University Name",
-      bullets: [
-        "Established the lab's cleanroom process for sub-10-micron polyimide arrays",
-        "Ran chronic rodent implantation and weekly recording protocol"
-      ]
+      period: "",                                   // TODO: 예) "2026 — present"
+      title: "Postdoctoral Researcher",
+      org: "Medical Research Center, Seoul National University",
+      detail: "Non-genetic neuromodulation and memory engram control"
     }
   ],
 
   skills: [
     {
       group: "Fabrication",
-      items: ["Photolithography", "Thin-film deposition", "Polyimide processing", "Parylene encapsulation", "Wire bonding and flip-chip assembly"]
+      items: [
+        "Thermal drawing of multifunctional fibers",
+        "Preform design",
+        "Neural probe assembly"
+      ]
     },
     {
-      group: "Electrophysiology",
-      items: ["Chronic rodent implantation", "Acute in vivo recording", "Impedance spectroscopy", "Stereotaxic surgery", "Immunohistochemistry"]
+      group: "Nanomaterials",
+      items: [
+        "Seed-mediated gold nanorod synthesis",
+        "Ligand exchange (CTAB to cholesterol-PEG)",
+        "TEM, UV-Vis spectroscopy, zeta potential"
+      ]
+    },
+    {
+      group: "In vivo",
+      items: [
+        "Stereotaxic implantation surgery",
+        "Single- and multi-unit electrophysiology",
+        "Photothermal neuromodulation",
+        "Immunohistochemistry (NeuN, Iba1)"
+      ]
+    },
+    {
+      group: "Characterization",
+      items: [
+        "Optical attenuation",
+        "Impedance spectroscopy",
+        "Bending stiffness",
+        "Infrared thermography"
+      ]
     },
     {
       group: "Computation",
-      items: ["Python (NumPy, SciPy, PyTorch)", "MATLAB", "Spike sorting pipelines", "State-space and latent variable models", "KiCad, COMSOL"]
+      items: [
+        "MATLAB",
+        "Python",
+        "SolidWorks",
+        "Bioheat modeling",
+        "Spike sorting and PETH analysis"
+      ]
     }
   ]
 };
