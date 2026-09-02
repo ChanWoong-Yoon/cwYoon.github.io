@@ -12,6 +12,8 @@
      note      선택. 권(호), 페이지 등. venue 뒤에 이탤릭 없이 붙습니다.
      selected  true이면 홈의 Selected work에 노출됩니다.
      links     선택. pdf / doi / code / project 중 있는 것만 적으면 됩니다.
+
+   ※ 저자 목록은 Crossref 등록 정보에서 생성했습니다.
 ------------------------------------------------------------------ */
 
 const PUBLICATIONS = [
@@ -27,27 +29,27 @@ const PUBLICATIONS = [
   {
     year: 2026,
     title: "Thermally Drawn Multifunctional All-Hydrogel Fibers for Anti-Fibrotic and Multimodal Neural Interfaces",
-    authors: ["C. Sung", "K. S. Nam", "Y. Kim", "H. Kang", "K. Kim", "C. Yoon", "…", "S. Park"],
+    authors: ["C. Sung", "K. S. Nam", "Y. Kim", "H. Kang", "K. Kim", "C. Yoon", "S. Lee", "A. Chung", "J. Kang", "Y.-G. Park", "A. J. Park", "H. Butt", "H. Yuk", "S. Park"],
     venue: "Advanced Materials",
     note: "38(9), e11634",
     selected: true,
-    links: { doi: "" }
+    links: { doi: "https://doi.org/10.1002/adma.202511634" }
   },
   {
     year: 2022,
     title: "A Personalized Electronic Tattoo for Healthcare Realized by On-the-Spot Assembly of an Intrinsically Conductive and Durable Liquid-Metal Composite",
-    authors: ["G.-H. Lee", "H. Woo", "C. Yoon", "C. Yang", "J. Y. Bae", "W. Kim", "…", "S. Park"],
+    authors: ["G.-H. Lee", "H. Woo", "C. Yoon", "C. Yang", "J.-Y. Bae", "W. Kim", "D. H. Lee", "H. Kang", "S. Han", "S.-K. Kang", "S. Park", "H.-R. Kim", "J.-W. Jeong", "S. Park"],
     venue: "Advanced Materials",
     note: "34(32), 2204159",
-    links: { doi: "" }
+    links: { doi: "https://doi.org/10.1002/adma.202204159" }
   },
   {
     year: 2021,
     title: "Recent Advances in Recording and Modulation Technologies for Next-Generation Neural Interfaces",
-    authors: ["J. W. Hong", "C. Yoon", "K. Jo", "J. H. Won", "S. Park"],
+    authors: ["J.-W. Hong", "C. Yoon", "K. Jo", "J. H. Won", "S. Park"],
     venue: "iScience",
-    note: "24(12) · Review",
+    note: "24(12), 103550 · Review",
     selected: true,
-    links: { doi: "" }
+    links: { doi: "https://doi.org/10.1016/j.isci.2021.103550" }
   }
 ];
