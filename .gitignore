@@ -1,2 +1,5 @@
 # 로컬 미리보기 서버 설정 등 작업 환경 파일
 .claude/
+
+# 작업용 메모 (thinking.asdf 등)
+*.asdf
