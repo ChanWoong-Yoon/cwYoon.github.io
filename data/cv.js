@@ -38,6 +38,47 @@ const CV = {
       title: "Postdoctoral Researcher",
       org: "Medical Research Center, Seoul National University",
       detail: "Non-genetic neuromodulation and memory engram control"
+    },
+    {
+      period: "Sep 2020 — Aug 2026",
+      title: "Doctoral Researcher",
+      org: "Bio and Neural Interfaces Laboratory, KAIST",
+      detail: "Advised by Prof. Seongjun Park",
+      bullets: [
+        "Built multifunctional fiber neural probes by thermal drawing, integrating a microfluidic channel, an optical waveguide and recording electrodes in one filament, and characterized their optical, fluidic, electrical and mechanical properties",
+        "Synthesized gold nanorods and exchanged their surface ligands for cholesterol-terminated PEG to make them biocompatible and membrane-anchoring",
+        "Carried out stereotaxic implantation and in vivo single- and multi-unit recording in mouse hippocampus and entorhinal cortex",
+        "Established the photothermal stimulation parameters that separate inhibition from excitation, and assessed tissue response by NeuN and Iba1 immunohistochemistry"
+      ]
+    }
+  ],
+
+  // 학회 발표. 최신순. period 는 연도, title 은 발표 제목, org 는 학회명.
+  presentations: [
+    {
+      period: "2026",
+      title: "Non-genetic Engram Allocation-and-Manipulation in Mouse Brain via Gold-nanorod Mediated Photothermal Stimulation",
+      org: "Korean Society for Brain and Neural Sciences (KSBNS)"
+    },
+    {
+      period: "2025",
+      title: "Non-genetic In vivo Bimodal Neuromodulation enabled by Fiber-based Neural Probe and Gold Nanorod",
+      org: "Society for Neuroscience (SfN)"
+    },
+    {
+      period: "2025",
+      title: "Non-genetic In vivo Bimodal Neuromodulation enabled by Fiber-based Neural Probe and Gold Nanorod",
+      org: "IEEE International Conference on Neural Engineering (NER)"
+    },
+    {
+      period: "2023",
+      title: "Non-genetic Bimodal in vivo neuromodulation using gold nanorod-mediated photothermal stimulation",
+      org: "Korean Society for Brain and Neural Sciences (KSBNS)"
+    },
+    {
+      period: "2022",
+      title: "Non-genetic, Bidirectional In-vivo Photothermal Neuromodulation Enabled by Gold Nanorod and Fiber-based Multifunctional Neural Interface",
+      org: "Korean BioChip Society (KBSC)"
     }
   ],
 

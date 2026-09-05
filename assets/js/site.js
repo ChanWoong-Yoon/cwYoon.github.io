@@ -208,6 +208,7 @@
       }
       mount("cv-education", CV.education.map(entryHTML).join(""));
       mount("cv-experience", CV.experience.map(entryHTML).join(""));
+      mount("cv-presentations", (CV.presentations || []).map(entryHTML).join(""));
       mount("cv-skills", CV.skills.map(skillHTML).join(""));
 
       var recent = PUBLICATIONS.slice(0, 5).map(function (pub) {
