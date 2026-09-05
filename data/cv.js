@@ -57,27 +57,27 @@ const CV = {
   presentations: [
     {
       period: "2026",
-      title: "Non-genetic Engram Allocation-and-Manipulation in Mouse Brain via Gold-nanorod Mediated Photothermal Stimulation",
+      title: "Non-Genetic Engram Allocation-and-Manipulation in Mouse Brain via Gold-Nanorod Mediated Photothermal Stimulation",
       org: "Korean Society for Brain and Neural Sciences (KSBNS)"
     },
     {
       period: "2025",
-      title: "Non-genetic In vivo Bimodal Neuromodulation enabled by Fiber-based Neural Probe and Gold Nanorod",
+      title: "Non-Genetic In Vivo Bimodal Neuromodulation Enabled by Fiber-Based Neural Probe and Gold Nanorod",
       org: "Society for Neuroscience (SfN)"
     },
     {
       period: "2025",
-      title: "Non-genetic In vivo Bimodal Neuromodulation enabled by Fiber-based Neural Probe and Gold Nanorod",
+      title: "Non-Genetic In Vivo Bimodal Neuromodulation Enabled by Fiber-Based Neural Probe and Gold Nanorod",
       org: "IEEE International Conference on Neural Engineering (NER)"
     },
     {
       period: "2023",
-      title: "Non-genetic Bimodal in vivo neuromodulation using gold nanorod-mediated photothermal stimulation",
+      title: "Non-Genetic Bimodal In Vivo Neuromodulation Using Gold Nanorod-Mediated Photothermal Stimulation",
       org: "Korean Society for Brain and Neural Sciences (KSBNS)"
     },
     {
       period: "2022",
-      title: "Non-genetic, Bidirectional In-vivo Photothermal Neuromodulation Enabled by Gold Nanorod and Fiber-based Multifunctional Neural Interface",
+      title: "Non-Genetic, Bidirectional In Vivo Photothermal Neuromodulation Enabled by Gold Nanorod and Fiber-Based Multifunctional Neural Interface",
       org: "Korean BioChip Society (KBSC)"
     }
   ],
