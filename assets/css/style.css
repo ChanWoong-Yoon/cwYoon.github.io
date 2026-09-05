@@ -186,6 +186,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 .trace {
   width: 100%;
+  max-width: var(--measure);
   height: 72px;
   margin: var(--step-3) 0 0;
   display: block;
@@ -356,7 +357,9 @@ img { max-width: 100%; height: auto; display: block; }
   max-width: 48ch;
 }
 
-.figure { margin: var(--step-3) 0; }
+/* 그림도 본문과 같은 단 폭(63ch)에 맞춘다. 그러지 않으면 섹션 폭을 다 써서
+   문단보다 넓어지고 왼쪽 정렬만 같고 오른쪽 끝이 어긋난다. */
+.figure { margin: var(--step-3) 0; max-width: var(--measure); }
 
 /* Research 그림은 각 절의 abstract 역할이라, 정사각 원본이 그대로 들어가면
    절 하나가 한 화면을 다 차지한다. 표시 높이만 제한하고 가운데를 보여준다.
