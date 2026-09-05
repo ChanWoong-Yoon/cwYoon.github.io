@@ -145,8 +145,9 @@
     return '<section class="topic">' +
       "<h2>" + esc(topic.title) + "</h2>" +
       (has(topic.lede) ? '<p class="topic-lede">' + esc(topic.lede) + "</p>" : "") +
+      figure +
       (topic.body || []).map(function (para) { return "<p>" + esc(para) + "</p>"; }).join("") +
-      figure + tags +
+      tags +
       "</section>";
   }
 

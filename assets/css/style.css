@@ -59,7 +59,7 @@ a:focus-visible {
   border-radius: 2px;
 }
 
-img { max-width: 100%; display: block; }
+img { max-width: 100%; height: auto; display: block; }
 
 /* ---------- skip link ---------------------------------------- */
 
@@ -356,7 +356,17 @@ img { max-width: 100%; display: block; }
   max-width: 48ch;
 }
 
-.figure { margin: var(--step-3) 0 0; }
+.figure { margin: var(--step-3) 0; }
+
+/* Research 그림은 각 절의 abstract 역할이라, 정사각 원본이 그대로 들어가면
+   절 하나가 한 화면을 다 차지한다. 표시 높이만 제한하고 가운데를 보여준다.
+   원본 파일은 손대지 않는다. 홈의 16:9 그림은 이미 이보다 낮아 영향 없음. */
+.topic .figure img {
+  width: 100%;
+  max-height: 440px;
+  object-fit: cover;
+  object-position: center;
+}
 .figure img { border-radius: 2px; background: var(--paper-sunk); }
 .figure figcaption {
   font-size: .8125rem;
