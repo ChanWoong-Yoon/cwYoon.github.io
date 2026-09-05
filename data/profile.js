@@ -39,7 +39,7 @@ const PROFILE = {
   ],
 
   email: "y122396@snu.ac.kr",
-  cvPdf: "",          // 예: "assets/cv/Chanwoong_Yoon_CV.pdf"
+  cvPdf: "assets/cv/Chanwoong_Yoon_CV.pdf",
 
   // url이 빈 문자열인 항목은 화면에 표시되지 않습니다. 나중에 채우면 자동으로 나타납니다.
   links: [
