@@ -34,7 +34,7 @@ const RESEARCH = [
     tags: ["Thermal drawing", "Multifunctional fibers", "Microfluidics", "Optical waveguides", "Neural probes", "In vivo"]
   },
   {title: "Cell-type specificity without a gene",
-lede: "Nanoparticles that can tell excitatory from inhibitory neurons.",
+lede: "Selectivity moved from the genome to the particle surface.",
 body: [
   "Optogenetics gets its selectivity from promoters: the actuator goes only where the genetic program puts it. Every non-genetic alternative gives that up. Magnetothermal, magnetoelectric, piezoelectric and photothermal particles all modulate whatever cell they happen to be sitting on, so they can address a region but not a population within it. Since excitatory and inhibitory neurons in the same volume push circuit activity in opposite directions, a stimulus that cannot tell them apart is difficult to reason about and harder to use.",
 
