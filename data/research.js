@@ -57,7 +57,7 @@ body: [
     tags: ["Memory engrams", "Engram allocation", "Contextual fear conditioning", "Hippocampus", "In progress"]
   },
   {
-   title: "Can a concept that was never learned be placed directly into a brain?",
+   title: "Directly injecting a concept",
 lede: "Engram control requires knowing which neurons to touch.",
 body: [
   "Optogenetic reactivation of a hippocampal ensemble is sufficient to drive recall, and enforcing engram-level connectivity can produce a memory for something that never happened. Both depend on tagging: the neurons must be labeled during learning or be genetically accessible, which confines the method to representations the animal already has. And allocation is not arbitrary — which neurons join an ensemble follows from excitability and existing connectivity — so driving a chosen set to arbitrary activity produces activity, not a representation.",

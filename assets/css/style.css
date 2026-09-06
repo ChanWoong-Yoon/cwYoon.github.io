@@ -346,7 +346,9 @@ img { max-width: 100%; height: auto; display: block; }
   letter-spacing: -0.015em;
   line-height: 1.3;
   margin: 0 0 .6rem;
-  max-width: 26ch;
+  /* 26ch 는 다섯 제목 중 넷을 두 줄로 접었다. 40ch 면 모두 한 줄에 들어가고,
+     가장 긴 제목도 60px 남아 대체 폰트에서 깨지지 않는다. */
+  max-width: 40ch;
 }
 .topic-lede {
   font-size: 1.1875rem;
