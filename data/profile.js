@@ -33,7 +33,7 @@ const PROFILE = {
   interests: [
     "Non-genetic neuromodulation with photothermal nanoparticles",
     "Multifunctional fiber neural probes by thermal drawing",
-    "Nanoparticle surface chemistry for membrane anchoring and cell-type targeting",
+    "Surface chemistry for membrane anchoring and cell-type targeting",
     "Memory engram allocation and control",
     "Experience-independent concept transfer"
   ],

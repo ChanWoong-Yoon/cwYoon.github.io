@@ -16,6 +16,9 @@
   --signal-tint:  #E9F1EF;
 
   --measure: 63ch;
+  /* 본문 문단(--measure, 17px 기준)이 실제로 차지하는 폭. ch 는 요소마다
+     글꼴 크기가 달라 값이 흔들리므로, 가로 구분선은 이 고정값에 맞춘다. */
+  --column: 40.1875rem;
 
   --step-1: 0.5rem;
   --step-2: 1rem;
@@ -234,6 +237,7 @@ img { max-width: 100%; height: auto; display: block; }
   margin: 0 0 var(--step-2);
   padding-bottom: .5rem;
   border-bottom: 1px solid var(--rule);
+  max-width: var(--column);
 }
 
 .page-title {
@@ -278,12 +282,14 @@ img { max-width: 100%; height: auto; display: block; }
   margin: var(--step-3) 0 0;
   padding-bottom: .4rem;
   border-bottom: 1px solid var(--rule);
+  max-width: var(--column);
 }
 .pub-year:first-of-type { margin-top: 0; }
 
 .pub {
   padding: var(--step-2) 0;
   border-bottom: 1px solid var(--rule);
+  max-width: var(--column);
 }
 .pub-title {
   font-size: 1.0625rem;
@@ -337,6 +343,7 @@ img { max-width: 100%; height: auto; display: block; }
   padding-top: var(--step-4);
   margin-top: var(--step-4);
   border-top: 1px solid var(--rule);
+  max-width: var(--column);
 }
 .topic:first-of-type { margin-top: 0; padding-top: 0; border-top: 0; }
 
@@ -404,6 +411,7 @@ img { max-width: 100%; height: auto; display: block; }
   gap: var(--step-2);
   padding: var(--step-2) 0;
   border-bottom: 1px solid var(--rule);
+  max-width: var(--column);
 }
 .entry:last-child { border-bottom: 0; }
 
@@ -439,6 +447,7 @@ img { max-width: 100%; height: auto; display: block; }
   gap: var(--step-2);
   padding: var(--step-2) 0;
   border-bottom: 1px solid var(--rule);
+  max-width: var(--column);
 }
 .skill-group:last-child { border-bottom: 0; }
 .skill-group h3 {
@@ -464,6 +473,7 @@ img { max-width: 100%; height: auto; display: block; }
   margin-top: var(--step-5);
   padding-top: var(--step-2);
   border-top: 1px solid var(--rule);
+  max-width: var(--column);
   font-size: .8125rem;
   color: var(--ink-faint);
 }
