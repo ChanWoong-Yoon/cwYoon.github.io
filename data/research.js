@@ -12,12 +12,12 @@
 const RESEARCH = [
   {
     title: "Neuromodulation without a transgene",
-    lede: "Nongenetic Bimodal Homology of Opsin.",
+    lede: "A gene-free counterpart to optogenetics.",
     body: [
        "Cell-type-specific control of neurons is routine in the laboratory because of opsins, but the very property that makes them precise makes them hard to translate: something genetically foreign has to be expressed first. That means weeks between surgery and experiment, uncertainty about expression efficiency, and a regulatory path few clinical programs want to walk. Genetics also fixes the direction of control — an excitatory opsin cannot be asked to inhibit.",
-       "I use gold nanorods as the actuator instead. Injected into tissue and illuminated at 808 nm, they absorb near-infrared light through localized surface plasmon resonance and release it as heat within nanometers of the membrane. Nothing has to be expressed, so stimulation can begin immediately after a single implantation surgery. To make the particles behave in vivo, the cytotoxic CTAB left over from seed-mediated synthesis is exchanged for cholesterol-terminated PEG, which facilicates the anchoring of the rods to the lipid bilayer while dropping cytotoxicity.",
+       "I use gold nanorods as the actuator instead. Injected into tissue and illuminated at 808 nm, they absorb near-infrared light through localized surface plasmon resonance and release it as heat within nanometers of the membrane. Nothing has to be expressed, so stimulation can begin immediately after a single implantation surgery. To make the particles behave in vivo, the cytotoxic CTAB left over from seed-mediated synthesis is exchanged for cholesterol-terminated PEG, which facilitates the anchoring of the rods to the lipid bilayer while dropping cytotoxicity.",
        "More importantly, photothermal stimulation works in both directions. Continuous irradiation of the treated CA1 raises local temperature by a few degrees and suppresses spontaneous firing, while brief high-intensity pulses do the opposite: a rapid temperature transient at the membrane evokes spiking, and stimulating the medial entorhinal cortex drives time-locked responses downstream in the dentate gyrus. Which direction you get depends only on how the light is pulsed, and the switch is reversible.",
-       "The result is a gene-free counterpart to optogenetics — bimodal, immediate, and built from components that could plausibly reach the human brain."
+       "The result is a clinically tractable counterpart to optogenetics — bimodal, immediate, and built from components that could plausibly reach the human brain."
     ],
     figure: { src: "assets/img/nongenetic-neuromodulation.jpg", caption: "Gold nanorods on the membrane turn near-infrared light into local heat. Continuous irradiation suppresses firing; brief high-intensity pulses evoke it." },
     tags: ["Photothermal stimulation", "Gold nanorods", "In vivo electrophysiology", "Surface functionalization", "In vivo"]
@@ -34,7 +34,7 @@ const RESEARCH = [
     tags: ["Thermal drawing", "Multifunctional fibers", "Microfluidics", "Optical waveguides", "Neural probes", "In vivo"]
   },
   {title: "Cell-type specificity without a gene",
-lede: "Nanoparticles that can tell an excitatory neuron from an inhibitory one.",
+lede: "Nanoparticles that can tell excitatory from inhibitory neurons.",
 body: [
   "Optogenetics gets its selectivity from promoters: the actuator goes only where the genetic program puts it. Every non-genetic alternative gives that up. Magnetothermal, magnetoelectric, piezoelectric and photothermal particles all modulate whatever cell they happen to be sitting on, so they can address a region but not a population within it. Since excitatory and inhibitory neurons in the same volume push circuit activity in opposite directions, a stimulus that cannot tell them apart is difficult to reason about and harder to use.",
 
