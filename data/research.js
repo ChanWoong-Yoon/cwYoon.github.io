@@ -58,7 +58,7 @@ body: [
   },
   {
    title: "Directly injecting a concept",
-lede: "Engram control requires knowing which neurons to touch.",
+lede: "A concept is fixed by its distances to the concepts already learned.",
 body: [
   "Optogenetic reactivation of a hippocampal ensemble is sufficient to drive recall, and enforcing engram-level connectivity can produce a memory for something that never happened. Both depend on tagging: the neurons must be labeled during learning or be genetically accessible, which confines the method to representations the animal already has. And allocation is not arbitrary — which neurons join an ensemble follows from excitability and existing connectivity — so driving a chosen set to arbitrary activity produces activity, not a representation.",
   "GIVER — Geometric Inference of Vectorized Engram Representation — sidesteps that problem by never identifying a cell. Treat the activity of N neurons as a point in N-dimensional state space, and a concept becomes a region rather than a list of cells, with related concepts sitting nearer than unrelated ones. The coordinate is also what makes the idea actionable, because it changes what has to be selected: which neurons carry the representation does not matter, only where their joint activity sits. Given a target coordinate, the weights between a freely chosen population and the reference ensembles could be adjusted until that population's activity settles at the intended point.",
