@@ -118,7 +118,7 @@ ${section("Conference presentations", (CV.presentations || []).map(pres).join(""
 ${section("Skills and techniques", CV.skills.map(s =>
   `<div class="skills"><div class="g">${esc(s.group)}</div><div class="v">${s.items.map(esc).join(", ")}</div></div>`).join(""))}
 
-<footer>Generated from cwyoon.github.io · ${new Date().toLocaleDateString("sv-SE")}</footer>
+<footer>Generated from chanwoong-yoon.github.io/cwYoon.github.io · ${new Date().toLocaleDateString("sv-SE")}</footer>
 </body></html>`;
 
 fs.writeFileSync(OUT, html);

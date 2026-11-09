@@ -4,20 +4,14 @@ Chanwoong Yoon의 개인 홈페이지. 빌드 도구가 필요 없는 정적 사
 
 ## 배포
 
-1. GitHub에서 `cwYoon.github.io` 이름으로 저장소를 만듭니다. (개인 페이지 저장소는 이름이 `사용자명.github.io`여야 하며 public이어야 합니다.)
-2. 이 폴더의 내용물을 저장소 루트에 올립니다.
+`main`에 push하면 1~2분 뒤 자동으로 반영됩니다.
 
-   ```bash
-   cd cwYoon.github.io
-   git init
-   git add .
-   git commit -m "Initial site"
-   git branch -M main
-   git remote add origin https://github.com/cwYoon/cwYoon.github.io.git
-   git push -u origin main
-   ```
-3. 저장소 Settings → Pages에서 Source를 `main` 브랜치 루트로 지정합니다.
-4. 1~2분 뒤 `https://cwyoon.github.io` 에서 확인할 수 있습니다.
+- 저장소: `ChanWoong-Yoon/cwYoon.github.io`
+- 주소: <https://chanwoong-yoon.github.io/cwYoon.github.io>
+
+저장소 이름이 계정명(`ChanWoong-Yoon`)과 다르기 때문에 개인 페이지(`사용자명.github.io`)가 아니라 프로젝트 페이지로 서빙되고, 주소에 저장소 이름이 한 번 더 붙습니다. `https://cwyoon.github.io`는 이 사이트가 아닙니다. 주소를 짧게 쓰고 싶다면 저장소 이름을 `ChanWoong-Yoon.github.io`로 바꾸거나 커스텀 도메인을 연결하면 됩니다.
+
+사이트 안의 경로는 전부 상대 경로라 어느 쪽이든 그대로 동작합니다.
 
 로컬에서 미리 보려면 `index.html`을 브라우저로 열면 됩니다. 별도 서버가 필요 없습니다.
 
