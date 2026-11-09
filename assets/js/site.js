@@ -21,6 +21,20 @@
     if (node) node.innerHTML = html;
   }
 
+  /* 항목이 없으면 그 섹션(제목 포함)을 통째로 숨깁니다. */
+  function mountList(id, list, render) {
+    var node = document.getElementById(id);
+    if (!node) return;
+    var items = list || [];
+    if (!items.length) {
+      var section = node.closest ? node.closest("section") : null;
+      if (section) section.hidden = true;
+      else node.hidden = true;
+      return;
+    }
+    node.innerHTML = items.map(render).join("");
+  }
+
   function has(value) {
     return typeof value === "string" && value.trim() !== "";
   }
@@ -206,10 +220,14 @@
       if (has(PROFILE.cvPdf)) {
         mount("cv-actions", '<a href="' + esc(PROFILE.cvPdf) + '">Download the PDF version</a>');
       }
-      mount("cv-education", CV.education.map(entryHTML).join(""));
-      mount("cv-experience", CV.experience.map(entryHTML).join(""));
-      mount("cv-presentations", (CV.presentations || []).map(entryHTML).join(""));
-      mount("cv-skills", CV.skills.map(skillHTML).join(""));
+      mountList("cv-education", CV.education, entryHTML);
+      mountList("cv-experience", CV.experience, entryHTML);
+      mountList("cv-inprep", CV.inprep, entryHTML);
+      mountList("cv-presentations", CV.presentations, entryHTML);
+      mountList("cv-awards", CV.awards, entryHTML);
+      mountList("cv-teaching", CV.teaching, entryHTML);
+      mountList("cv-skills", CV.skills, skillHTML);
+      mountList("cv-references", CV.references, entryHTML);
 
       var recent = PUBLICATIONS.slice(0, 5).map(function (pub) {
         return entryHTML({
