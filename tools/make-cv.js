@@ -49,8 +49,9 @@ const contact = [
     .map(l => `${esc(l.label)}: ${esc(l.url.replace(/^https?:\/\/(www\.)?/, ""))}`)
 ].filter(Boolean).join(" &nbsp;·&nbsp; ");
 
+/* 내용이 없는 섹션은 제목째로 내보내지 않는다. */
 const section = (title, inner) =>
-  `<section><h2>${esc(title)}</h2>${inner}</section>`;
+  inner ? `<section><h2>${esc(title)}</h2>${inner}</section>` : "";
 
 const html = `<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 <title>${esc(PROFILE.name)} — Curriculum Vitae</title>
@@ -112,11 +113,12 @@ ${section("Research interests",
 ${section("Education", CV.education.map(eduExp).join(""))}
 ${section("Research experience", CV.experience.map(eduExp).join(""))}
 ${section("Publications", PUBLICATIONS.map(pub).join(""))}
+${section("Manuscripts in preparation", (CV.inprep || []).map(pres).join(""))}
 ${section("Conference presentations", (CV.presentations || []).map(pres).join(""))}
 ${section("Skills and techniques", CV.skills.map(s =>
   `<div class="skills"><div class="g">${esc(s.group)}</div><div class="v">${s.items.map(esc).join(", ")}</div></div>`).join(""))}
 
-<footer>Generated from chanwoong-yoon.github.io/cwYoon.github.io · ${new Date().toLocaleDateString("sv-SE")}</footer>
+<footer>Generated from cwyoon.github.io · ${new Date().toLocaleDateString("sv-SE")}</footer>
 </body></html>`;
 
 fs.writeFileSync(OUT, html);

@@ -182,6 +182,31 @@
       "</div></div>";
   }
 
+  /* CV의 논문 항목. 연도 열은 entry 레이아웃을 그대로 쓰면서
+     저자 강조·권호·DOI 는 publications 페이지와 동일하게 맞춥니다. */
+  function cvPubHTML(pub) {
+    var venue = has(pub.venue) ? "<em>" + esc(pub.venue) + "</em>" : "";
+    if (has(pub.note)) {
+      venue += (venue ? " " : "") + '<span class="pub-note">' + esc(pub.note) + "</span>";
+    }
+
+    var links = pub.links || {};
+    var linkHTML = Object.keys(LINK_LABELS)
+      .filter(function (key) { return has(links[key]); })
+      .map(function (key) {
+        return '<a href="' + esc(links[key]) + '">' + LINK_LABELS[key] + "</a>";
+      }).join("");
+
+    return '<div class="entry">' +
+      '<div class="entry-period">' + esc(pub.year) + "</div>" +
+      "<div>" +
+        '<p class="entry-title">' + esc(pub.title) + "</p>" +
+        (venue ? '<p class="entry-org">' + venue + "</p>" : "") +
+        '<p class="entry-detail pub-authors">' + authorsHTML(pub.authors || []) + "</p>" +
+        (linkHTML ? '<div class="pub-links">' + linkHTML + "</div>" : "") +
+      "</div></div>";
+  }
+
   function skillHTML(group) {
     return '<div class="skill-group">' +
       "<h3>" + esc(group.group) + "</h3>" +
@@ -229,14 +254,7 @@
       mountList("cv-skills", CV.skills, skillHTML);
       mountList("cv-references", CV.references, entryHTML);
 
-      var recent = PUBLICATIONS.slice(0, 5).map(function (pub) {
-        return entryHTML({
-          period: String(pub.year),
-          title: pub.title,
-          org: pub.venue,
-          detail: (pub.authors || []).join(", ")
-        });
-      }).join("");
+      var recent = PUBLICATIONS.slice(0, 5).map(cvPubHTML).join("");
       mount("cv-publications", recent +
         '<p class="selected-note"><a href="publications.html">See the full publication list</a></p>');
     }
