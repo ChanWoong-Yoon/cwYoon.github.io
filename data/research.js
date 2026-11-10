@@ -24,7 +24,7 @@ const RESEARCH = [
   },
   {
     title: "A probe that delivers, illuminates, and listens",
-    lede: "Particles, light, and electrode have to meet in one place.",
+    lede: "Particles, light, and electrode delivered in one place.",
     body: [
        "In nanoparticle-mediated neuromodulation and monitoring the effect, most of the difficulty is not the chemistry. It is that three components — the injected particles, the optical stimulus, and the recording site — have to meet at the same point inside tissue you cannot see into. Assembling that from separate cannulas, fibers, and electrodes means three insertion tracks, three sources of misalignment, and a much larger wound.",
        "I build the whole thing as one fiber. A macroscopic polymer preform is thermally co-drawn into a flexible fiber that carries a microfluidic channel, an optical waveguide, and tungsten microwire electrodes together, in fixed relative position. Optical transmission, fluidic delivery rate, and electrical impedance all meet the requirements for in vivo work, and the assembled probe weighs about 0.6 g — light enough for a freely moving mouse.",
@@ -58,7 +58,7 @@ body: [
   },
   {
    title: "Directly injecting a concept",
-lede: "New information is always grafted onto pre-existing experiences.",
+lede: "New information artificially grafted onto pre-existing experiences.",
 body: [
   "Reactivating a tagged ensemble drives recall, and artificially connecting the populations that carry two memories can link them, or associate representations never jointly experienced. All of it runs through tagging, which confines the method to representations the animal already has. And allocation is not arbitrary — which neurons join an ensemble follows from excitability and existing connectivity — so driving an arbitrary set to an arbitrary pattern produces activity, not a representation.",
   "What differs between two brains is the neural code rather than the content. Knowledge transfers between people because new information is not built from scratch in the receiver; it is grafted onto experiences the two already share, taking its meaning from its relationships to them. That has a cellular counterpart. Related memories are stored in partially overlapping ensembles, and the overlap is actively regulated: neurons made transiently more excitable are preferentially recruited, so memories formed close in time come to share neurons and become linked.",
