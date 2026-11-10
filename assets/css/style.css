@@ -219,6 +219,7 @@ img { max-width: 100%; height: auto; display: block; }
    (html lang="en" 이 있어야 하이픈이 동작합니다)
    저자명·학술지명·기간 같은 서지 정보는 산문이 아니므로 제외한다. */
 #intro p,
+.intro-lead,
 .page-lede,
 .topic p,
 .entry li {
@@ -227,16 +228,15 @@ img { max-width: 100%; height: auto; display: block; }
   hyphens: auto;
 }
 
-/* 첫 문단은 나머지를 읽지 않는 사람을 위한 요약이므로, 본문에서 떼어 놓는다.
-   굵기를 낮추고 크기를 올린 뒤 가는 선으로 끊는다. */
-#intro .intro-lead {
+/* 첫 문단은 나머지를 읽지 않는 사람을 위한 요약이라, 그림 위 hero 안에 둔다.
+   본문과 구별되도록 크기를 올리고 굵기를 낮춘다. */
+.intro-lead {
   font-size: 1.1875rem;
   font-weight: 300;
   line-height: 1.5;
-  padding-bottom: var(--step-2);
-  margin-bottom: var(--step-2);
-  border-bottom: 1px solid var(--rule);
+  margin: var(--step-3) 0 0;
 }
+.intro-lead:empty { display: none; }
 
 /* ---------- sections ----------------------------------------- */
 

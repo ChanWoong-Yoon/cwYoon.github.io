@@ -224,9 +224,11 @@
 
     if (page === "index.html") {
       mount("statement", esc(PROFILE.statement));
-      // The first paragraph stands as the summary, for readers who stop there.
-      mount("intro", PROFILE.intro.map(function (p, i) {
-        return '<p' + (i === 0 ? ' class="intro-lead"' : "") + ">" + esc(p) + "</p>";
+      // The opening paragraph belongs in the hero, above the figure, so that a
+      // reader who never scrolls still gets the summary. The rest follows it.
+      mount("intro-lead", esc(PROFILE.intro[0] || ""));
+      mount("intro", PROFILE.intro.slice(1).map(function (p) {
+        return "<p>" + esc(p) + "</p>";
       }).join(""));
       mount("interests", PROFILE.interests.map(function (i) {
         return "<li>" + esc(i) + "</li>";
