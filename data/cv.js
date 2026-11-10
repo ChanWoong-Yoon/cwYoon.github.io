@@ -45,7 +45,7 @@ const CV = {
         "Suppressing retrieval of the allocated engram by continuous near-infrared irradiation during the memory test, with a no-pre-stimulation group establishing that the effect depends on the previously allocated population",
         "Running contextual fear conditioning with automated scoring of freezing and locomotor speed across allocation and non-allocation cohorts",
         "Maintaining transgenic mouse lines and recording population activity by fiber photometry in conditioned and neutral contexts",
-        "Developing a relational framework in which engram identity is defined by overlap and co-firing with previously stored engrams, and testing experience-independent transfer computationally in a model of the entorhinal–dentate perforant pathway"
+        "Developing a relational framework in which engram identity is defined by cosine similarity with previously stored engrams, and testing experience-independent transfer computationally in a model of the entorhinal–dentate perforant pathway"
       ]
     },
     {
@@ -58,7 +58,7 @@ const CV = {
         "Synthesized gold nanorods and exchanged their surface ligands for cholesterol-terminated PEG to make them biocompatible and membrane-anchoring",
         "Carried out stereotaxic implantation and in vivo single- and multi-unit recording in mouse hippocampus and entorhinal cortex",
         "Established the photothermal stimulation parameters that separate inhibition from excitation, and assessed tissue response by NeuN and Iba1 immunohistochemistry",
-        "Developed cell-type-specific non-genetic neuromodulation by conjugating antibodies to nanoparticles, validating targeting in primary neuronal culture by calcium imaging and immunostaining (project concluded when the laboratory relocated)"
+        "Developed cell-type-specific non-genetic neuromodulation by conjugating antibodies to nanoparticles, validating targeting in primary neuronal culture by calcium imaging and immunostaining"
       ]
     }
   ],
