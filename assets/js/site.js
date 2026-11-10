@@ -224,7 +224,10 @@
 
     if (page === "index.html") {
       mount("statement", esc(PROFILE.statement));
-      mount("intro", PROFILE.intro.map(function (p) { return "<p>" + esc(p) + "</p>"; }).join(""));
+      // The first paragraph stands as the summary, for readers who stop there.
+      mount("intro", PROFILE.intro.map(function (p, i) {
+        return '<p' + (i === 0 ? ' class="intro-lead"' : "") + ">" + esc(p) + "</p>";
+      }).join(""));
       mount("interests", PROFILE.interests.map(function (i) {
         return "<li>" + esc(i) + "</li>";
       }).join(""));
