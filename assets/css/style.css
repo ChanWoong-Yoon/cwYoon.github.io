@@ -100,10 +100,12 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* ---------- identity ----------------------------------------- */
 
+/* Portrait aspect (roughly 3:4) so the photo shows head and shoulders
+   rather than a square crop that stops at the neck. */
 .portrait-frame {
   position: relative;
   width: 8.5rem;
-  height: 8.5rem;
+  height: 11rem;
   margin-bottom: var(--step-2);
   background: var(--signal-tint);
   border-radius: 2px;
@@ -496,7 +498,7 @@ img { max-width: 100%; height: auto; display: block; }
   }
   .portrait-frame {
     width: 5.5rem;
-    height: 5.5rem;
+    height: 7.1rem;
     margin: 0;
     grid-row: span 2;
   }
@@ -535,7 +537,7 @@ img { max-width: 100%; height: auto; display: block; }
 @media (max-width: 34rem) {
   body { font-size: 1rem; }
   .rail { grid-template-columns: 4.5rem minmax(0, 1fr); }
-  .portrait-frame { width: 4.5rem; height: 4.5rem; }
+  .portrait-frame { width: 4.5rem; height: 5.8rem; }
   .entry, .skill-group { grid-template-columns: 1fr; gap: .35rem; }
   .entry-period { padding-top: 0; }
   .trace { height: 56px; }
